@@ -111,8 +111,6 @@ echo "Try to install composer"
 curl -sS https://getcomposer.org/installer | php
 echo "Done installing composer"
 
-chmod 777 composer.phar
-mv composer.phar /usr/local/bin/composer
 
 
 # 5. Install Composer modules 
