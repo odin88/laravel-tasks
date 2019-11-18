@@ -116,7 +116,7 @@ echo "Done installing composer"
 # 5. Install Composer modules 
 if [ -e "$DEPLOYMENT_TARGET/composer.json" ]; then
   cd "$DEPLOYMENT_TARGET"
-  eval php composer.phar install
+  eval php composer.phar install --quiet
   exitWithMessageOnError "composer failed"
   cd - > /dev/null
 fi
